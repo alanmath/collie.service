@@ -5,10 +5,9 @@ import lombok.experimental.Accessors;
 
 @Builder
 @Accessors(fluent = true, chain = true)
-public record MicroserviceRegisterIn(
-    String nome,
+public record MicroserviceIn (
+    String name,
     String squadResponsavel
-    // verificar se precisa mais.
 ) {
-
+    
 }

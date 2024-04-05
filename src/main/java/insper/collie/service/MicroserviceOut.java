@@ -5,11 +5,10 @@ import lombok.experimental.Accessors;
 
 @Builder
 @Accessors(fluent = true, chain = true)
-public record MicroserviceInfo(
-    Long id,
-    String nome,
+public record MicroserviceOut (
+    String id,
+    String name,
     String squadResponsavel
-    // Verificar se precisa de mais
 ) {
-
+    
 }
