@@ -7,6 +7,7 @@ import lombok.experimental.Accessors;
 public record MicroserviceAll (
     String id,
     String name,
+    String linkRepositorio,
     String squadResponsavel,
     String squadNome
 ) {
