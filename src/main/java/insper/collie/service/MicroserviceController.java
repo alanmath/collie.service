@@ -24,7 +24,7 @@ public interface MicroserviceController {
     public ResponseEntity<List<MicroserviceOut>> read();
 
     @GetMapping("/microservices/{id}")
-    public ResponseEntity<MicroserviceOut> readById(
+    public ResponseEntity<MicroserviceAll> readById(
         @PathVariable(required = true) String id
     );
 
