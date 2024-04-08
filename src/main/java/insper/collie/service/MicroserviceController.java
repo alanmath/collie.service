@@ -21,22 +21,15 @@ public interface MicroserviceController {
     );
 
     @GetMapping("/microservices")
-    public ResponseEntity<List<MicroserviceOut>> read(
-        // @RequestHeader(required = true, name = "id-user") String idUser,
-        // @RequestHeader(required = true, name = "role-user") String roleUser
-    );
+    public ResponseEntity<List<MicroserviceOut>> read();
 
     @GetMapping("/microservices/{id}")
     public ResponseEntity<MicroserviceOut> readById(
         @PathVariable(required = true) String id
-        // @RequestHeader(required = true, name = "id-user") String idUser,
-        // @RequestHeader(required = true, name = "role-user") String roleUser
     );
 
     @DeleteMapping("/microservices/{id}")
     public ResponseEntity<MicroserviceOut> delete(
         @PathVariable(required = true) String id
-        // @RequestHeader(required = true, name = "id-user") String idUser,
-        // @RequestHeader(required = true, name = "role-user") String roleUser
     );
 }
