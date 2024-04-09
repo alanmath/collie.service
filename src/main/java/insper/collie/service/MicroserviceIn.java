@@ -7,8 +7,8 @@ import lombok.experimental.Accessors;
 @Accessors(fluent = true, chain = true)
 public record MicroserviceIn (
     String name,
-    String linkRepositorio,
-    String squadResponsavel
+    String linkRepository,
+    String squad_id
 ) {
     
 }

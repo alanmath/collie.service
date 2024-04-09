@@ -8,8 +8,8 @@ import lombok.experimental.Accessors;
 public record MicroserviceOut (
     String id,
     String name,
-    String linkRepositorio,
-    String squadResponsavel
+    String linkRepository,
+    String squad_id
 ) {
     
 }
