@@ -32,4 +32,10 @@ public interface MicroserviceController {
     public ResponseEntity<MicroserviceOut> delete(
         @PathVariable(required = true) String id
     );
+
+    @PostMapping("/microservices/{id}/trivy")
+    public void trivy(
+        @PathVariable(required = true) String id,
+        @RequestBody(required = true) TrivyReportIn in
+    );
 }
