@@ -28,6 +28,11 @@ public interface MicroserviceController {
         @PathVariable(required = true) String id
     );
 
+    @GetMapping("/microservices/squad/{squadId}")
+    public ResponseEntity<List<MicroserviceAll>> readBySquad(
+        @PathVariable(required = true) String squadId
+    );
+
     @DeleteMapping("/microservices/{id}")
     public ResponseEntity<MicroserviceOut> delete(
         @PathVariable(required = true) String id
