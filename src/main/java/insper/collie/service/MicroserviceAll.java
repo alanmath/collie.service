@@ -1,4 +1,6 @@
 package insper.collie.service;
+import java.io.Serializable;
+
 import lombok.Builder;
 import lombok.experimental.Accessors;
 
@@ -10,6 +12,6 @@ public record MicroserviceAll (
     String linkRepository,
     String squad_id,
     String squadName
-) {
+) implements Serializable{
     
 }
